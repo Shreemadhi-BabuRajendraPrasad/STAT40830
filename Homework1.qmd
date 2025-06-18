@@ -7,7 +7,7 @@ execute:
 editor: visual
 ---
 
-## Introduction
+## *Introduction*
 
 The **'diamonds'** is an in built dataset from **\`ggplot2\`** package which contains *pricing and quality* information of around 50,000 diamonds.
 
@@ -22,7 +22,7 @@ Each row represents the data of a single diamond with the key variables:
 -   **price**: *Price in US dollars*
 -   **x, y, z**: *Length, width, and depth (in mm)*
 
-This dataset is commonly used for demonstrate data visualization, statistical modeling, etc.
+This dataset is commonly used for demonstrate **data visualization, statistical modeling, etc.**
 
 ```{r}
 library(ggplot2)
@@ -31,11 +31,11 @@ dim(diamonds)
 
 The dataset consists of **53940 rows** and **10 columns**.
 
-## **Diamond Price Distribution by Clarity** [(Boxplot)]{style="color:darkblue"}
+## ***Diamond Price Distribution by Clarity*** 
 
 ```{r}
 ggplot(diamonds, aes(x = clarity, y = price)) +
-  geom_boxplot(fill = "darkred") +
+  geom_boxplot(fill = "deeppink4") +
   labs(
     title = "Diamond Price Distribution by Clarity",
     x = "Clarity",
